@@ -1,0 +1,198 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	-webkit-overflow-scrolling: touch;
+	font-family: "微软雅黑";
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,body,.container{
+	width: 100%;
+	max-width: 1024px !important;
+	margin: auto;
+	position: relative;
+}
+.bgImg{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	display: none;
+}
+.main{
+	width: 100%;
+}
+.conter{
+	width: 100%;
+	padding: .38rem 0;
+	background: url(../images/combg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.conter_top{
+	width: 100%;
+	height: .8rem;
+	line-height: .76rem;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -moz-box;
+	display: box;
+	-moz-box-pack: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+	-moz-justify-content: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	font-size: .27rem;
+	color: #fff;
+	margin:0 auto .33rem;
+}
+.conter_top .top_box{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-left: .15rem;
+}
+.top_box h4{
+	width: 100%;
+	height: 50%;
+	margin-top: -.18rem;
+}
+.top_box p{
+	width: 100%;
+	height: 50%;
+}
+.conter_top img{
+	width: .82rem;
+	height: .82rem;
+}
+.conter_videoBox{
+	width: 90%;
+	height: 7.9rem;
+	margin:auto;
+	border-radius: 10px;
+	position: relative;
+	box-shadow: 0 1px 2px #ed7a65;
+	z-index: 100;
+}
+.conter_videoBox .login{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	position: absolute;
+	background: #333;
+	overflow: hidden;
+}
+.login_play{
+	position: absolute;
+	width: 1.14rem;
+	height: 1.14rem;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background: url(../images/complay.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 999;
+}
+.login_video{
+	position: absolute;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.login_video .center{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.qp{
+	width: .64rem;
+	height: .64rem;
+	border: 10px solid transparent;
+	background: url(../images/qb.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: .11rem;
+	z-index: 99999;
+	bottom: .11rem;
+}
+#canvas{
+	margin:-24% auto;
+	background: #000;
+}
+.login_video video{
+	width: 100%;
+	height: 99%;
+	top: 0;
+	position: absolute;
+}
+.poster{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.poster img{
+	width: 100%;
+	height: 103%;
+}
+.poster,.login_video{
+	width: 100%;
+	height: 100%;
+}
+.conter_text{
+	width: 100%;
+	margin-top: .33rem;
+	line-height: .4rem;
+}
+.conter_text p{
+	width: 100%;
+	text-align: center;
+	color: #BC4B0E;
+	font-size: .24rem;
+}
+.btn{
+	width: 3.4rem;
+	height: .81rem;
+	margin: .25rem auto;
+	background: #FE3A8C;
+	color: #fff;
+	display: block;
+	border-radius: 10px;
+	font-size: .25rem;
+	line-height: .81rem;
+	text-align: center;
+}
+.fuceng {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: -15px;
+	background-image: url(../images/safari.png);
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	display: none;
+	z-index:9999;
+}
+
+.fuceng_android {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: -15px;
+	background-image: url(./browser.png);
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	display: none;
+	z-index:9999;
+}

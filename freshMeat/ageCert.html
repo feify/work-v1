@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--让IE以最新的内核渲染 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<!--让视口宽度为设备宽度,不允许用户缩放 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<!--不自动识别电话号码和邮编 -->
+	<meta name="format-detection" content="telephone=no,email=no"/>
+	<!--开启对webapp的支持 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--强制全屏显示 -->
+	<meta name="full-screen" content="yes">
+	<!--禁止浏览器从缓存中访问页面内容 -->
+	<meta http-equiv="Pragma" content="no-cache">
+	<!--web app 应用下状态(屏幕顶部条)的颜色,默认值为 default(白色) -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<title>年龄认证</title>
+	<link rel="stylesheet" href="css/ageCert.css">
+</head>
+<body>
+<div id="fc" class="fuceng"></div>
+	<!-- 隐藏图 -->
+	<img src="images/comlogo.png" class='bgImg'> 
+	<div class="container">
+		<header class="header">
+			<h4><img src="images/comlogo.png" alt="iF视频社交"><div><span>iF</span><span>-&nbsp;开启社交颜世代</span></div></h4>
+			<p>立即下载</p>
+		</header>
+		<main class="main">
+			<section class="conter">
+				<!-- 内容 -->
+				<div class="conterBox_gold">
+					<div class="boxTop">
+						<h1>iF年龄认证</h1>
+						<p>恭喜你认证成为了iF<span>萌妹子</span></p>
+					</div>
+					<div class="conter_videoBox">
+						<div class="login">
+							<p class="login_play"></p>
+						</div>
+						<!-- poster/缩略图 -->
+						<div class="poster"><img src="images/suo.png" alt="年龄认证"></div>
+						<div class="login_video">
+							<video id="videos">
+							    <source src="https://wsshare.if-chat.com/104693_46A8C82B-2941-4179-B5CC-8F87889B23B9_1484931643_2660097134" />
+							</video>
+							<center><canvas id="canvas"></canvas></center>
+							<div class="qp"></div>
+						</div>
+					</div>
+					<!-- 用户信息 -->
+					<div class="userBox">
+						<div class="user">
+							<img src="images/comuser.png" alt="用户头像">
+							<div class='userR'>
+								<span>小泰山</span>
+								<div class="invite">Ta的邀请码：<span id="blue">46DAp8</span></div>
+							</div>
+						</div>
+						<div class="girl"></div>
+					</div>
+				</div>
+				<div class="btn">我也要认证</div>
+			</section>
+		</main>
+	</div>
+	<script src="https://s4.cnzz.com/z_stat.php?id=1261180768&web_id=1261180768" language="JavaScript"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/ageCert.js"></script>
+</body>
+</html>

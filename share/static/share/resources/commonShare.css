@@ -1,0 +1,286 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	text-decoration: none;
+	-webkit-overflow-scrolling: touch;
+	font-family: "微软雅黑";
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,body,.container{
+	width: 100%;
+	max-width: 1024px !important;
+	margin: auto;
+	height: 100%;
+	position: relative;
+}
+.container{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -moz-box;
+	display: box;
+	flex-direction: column;
+	-moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	box-orient:justify;
+	-moz-box-orient:justify;
+	-webkit-box-orient:justify;
+}
+.bgImg{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	display: none;
+}
+.header{
+	width: 100%;
+	height: .91rem;
+	padding: 0 .35rem;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -moz-box;
+	display: box;
+	-moz-box-pack: justify;
+	-webkit-box-pack: justify;
+	box-pack: justify;
+	-moz-box-align: center;
+	-webkit-box-align: center;
+	box-align: center;
+	-moz-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-moz-align-items: center;
+	align-items: center;
+	-webkit-align-items: center;
+	border-bottom: 1px solid #ccc;
+}
+#red{
+	color: #19A8EB;
+	font-weight: bold;
+}
+.user{
+	padding-left: .65rem;
+}
+.header div{
+	font-size: .25rem;
+	position: relative;
+	line-height: .4rem;
+	color: #4D4D4D;
+}
+.header div img{
+	width: .52rem;
+	height: .52rem;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.main{
+	width: 100%;
+	flex-grow: 1;
+	-webkit-flex-grow: 1;
+	-moz-flex-grow: 1;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
+	position: relative;
+}
+.conter{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.conter_videoBox{
+	width: 100%;
+	height: 100%;
+	margin:auto;
+	position: relative;
+	z-index: 100;
+}
+.addMy{
+	display: block;
+	width: 1.67rem;
+	height: .53rem;
+	background: url(https://qiniustatic.if-chat.com/h5/staticv2/comadd.png);
+	background-size: 100% 100%;
+	position: absolute;
+	right: 0;
+	top: .32rem;
+	z-index: 9999999;
+}
+.conter_videoBox .login{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #333;
+	overflow: hidden;
+}
+.login_play{
+	position: absolute;
+	width: 1.11rem;
+	height: 1.11rem;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background: url(https://qiniustatic.if-chat.com/h5/staticv2/complay.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 999;
+}
+.login_video{
+	position: absolute;
+	overflow: hidden;
+}
+.login_video center{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.qp{
+	width: .64rem;
+	height: .64rem;
+	border: 10px solid transparent;
+	background: url(https://qiniustatic.if-chat.com/h5/staticv2/qb.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: .11rem;
+	z-index: 99999;
+	bottom: 1.1rem;
+}
+#canvas{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+	background: #000;
+}
+.login_video video{
+	width: 102%;
+	height: 100%;
+	top: 0;
+	position: absolute;
+}
+.poster{
+	position: absolute;
+	bottom: 0;
+	left: -.13rem;
+	z-index: 99;
+	overflow: hidden;
+}
+.poster{
+	width: 102%;
+	height: 100%;
+}
+.poster img{
+	width: 102%;
+	height: 103%;
+}
+.login_video{
+	width: 100%;
+	height: 100%;
+}
+.footer{
+	display: block;
+	width: 100%;
+	height: 1.07rem;
+	max-width: 1024px !important;
+	background-color: #fff;
+	padding-left: .13rem;
+	position: fixed;
+	bottom: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -moz-box;
+	display: box;
+	-moz-box-pack: justify;
+	-webkit-box-pack: justify;
+	box-pack: justify;
+	-moz-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-moz-box-align: center;
+	-webkit-box-align: center;
+	box-align: center;
+	-moz-align-items: center;
+	align-items: center;
+	-webkit-align-items: center;
+	padding: 0 .3rem;
+	z-index: 999999;
+}
+.footer h4{
+	font-size: .3rem;
+	color: #000;
+	font-weight: normal;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -moz-box;
+	display: box;
+}
+.footer h4 div{
+	position: relative;
+}
+.footer h4 span:nth-child(1){
+	font-weight: bold;
+	padding-right: .1rem;
+}
+.footer h4 span:nth-child(2){
+	font-size: .22rem;
+	color: #737373;
+	line-height: 1.07rem;
+	position: relative;
+	top: -.03rem;
+}
+.footer h4 img{
+	width: .81rem;
+	height: .81rem;
+	margin-right: .1rem;
+	margin-top: .12rem;
+}
+.footer p{
+	width: 1.35rem;
+	height: .63rem;
+	border-radius: 10px;
+	border: 1px solid #000;
+	line-height: .63rem;
+	text-align: center;
+	font-size: .2rem;
+	color: #000;
+}
+.fuceng {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	background-image: url(https://qiniustatic.if-chat.com/h5/staticv2/safari.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: none;
+	z-index:99999999;
+}
+
+.fuceng_android {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	background-image: url(https://qiniustatic.if-chat.com/h5/staticv2/browser.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: none;
+	z-index:99999999;
+}

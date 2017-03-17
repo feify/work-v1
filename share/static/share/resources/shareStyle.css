@@ -1,0 +1,423 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	text-decoration: none;
+	-webkit-overflow-scrolling: touch;
+	font-family: 'PingFang medium';
+	font-family: "微软雅黑";
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,body,.container{
+	width: 100%;
+	max-width: 1024px !important;
+	margin: auto;
+	position: relative;
+}
+.bgImg{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	display: none;
+}
+.container{
+	background: url(https://qiniustatic.if-chat.com/h5/staticv2/floor.png) no-repeat;
+	background-size: 100% 100%;
+	padding-bottom: 1.3rem;
+}
+.header{
+	display: block;
+	width: 100%;
+	height: 1.07rem;
+	max-width: 1024px !important;
+	background-color: #fff;
+	padding-left: .13rem;
+	position: fixed;
+	bottom: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -moz-box;
+	display: box;
+	-moz-box-pack: justify;
+	-webkit-box-pack: justify;
+	box-pack: justify;
+	-moz-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-moz-box-align: center;
+	-webkit-box-align: center;
+	box-align: center;
+	-moz-align-items: center;
+	align-items: center;
+	-webkit-align-items: center;
+	padding: 0 .3rem;
+	z-index: 999999;
+}
+.header h4{
+	font-size: .3rem;
+	color: #000;
+	font-weight: normal;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -moz-box;
+	display: box;
+}
+.header h4 div{
+	position: relative;
+}
+.header h4 span:nth-child(1){
+	font-weight: bold;
+	padding-right: .1rem;
+}
+.header h4 span:nth-child(2){
+	font-size: .22rem;
+	color: #737373;
+	line-height: 1.07rem;
+	position: relative;
+	top: -.03rem;
+}
+.header h4 img{
+	width: .81rem;
+	height: .81rem;
+	margin-right: .1rem;
+	margin-top: .12rem;
+}
+.header p{
+	width: 1.35rem;
+	height: .63rem;
+	border-radius: 10px;
+	border: 1px solid #000;
+	line-height: .63rem;
+	text-align: center;
+	font-size: .2rem;
+	color: #000;
+}
+.main{
+	width: 100%;
+	padding-top: .2rem;
+}
+.conter{
+	width: 6.24rem;
+	margin:auto;
+	left: 0;
+	right: 0;
+	padding: .34rem .2rem .1rem;
+	background: url(https://qiniustatic.if-chat.com/h5/staticv2/bg.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.conter_top{
+	width: 100%;
+	height: 1.14rem;
+	position: relative;
+	background:#fff;
+}
+.conter_top .top_pendant{
+	width: 65%;
+	height: .03rem;
+	position: relative;
+	left: 0;
+	right:0;
+	margin: auto;
+	top: .19rem;
+	background: #F4A65C;
+}
+.top_pendant p{
+	width: 30%;
+	position: absolute;
+	height: .3rem;
+	left: 0;
+	right: 0;
+	margin:-.13rem auto;
+	padding: 0 .2rem;
+	background: #fff;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -moz-box;
+	display: box;
+	-moz-box-pack: justify;
+	-webkit-box-pack: justify;
+	box-pack: justify;
+	-moz-box-align: center;
+	-webkit-box-align: center;
+	box-align: center;
+	-moz-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-moz-align-items: center;
+	align-items: center;
+	-webkit-align-items: center;
+}
+.top_pendant p span{
+	display: inline-block;
+	width: .1rem;
+	border-radius: 50%;
+	background: #F4A65C;
+	height: .1rem;
+}
+.conter_top .top_title{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: .43rem;
+	font-size: .35rem;
+	color: #E13421;
+}
+.conter_videoBox{
+	width: 95%;
+	height: 6.83rem;
+	margin:.17rem auto;
+	border:.09rem solid #fff;
+	position: relative;
+	overflow: hidden;
+}
+.login_play{
+	position: absolute;
+	width: 1.22rem;
+	height: 1.22rem;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background: url(https://qiniustatic.if-chat.com/h5/staticv2/play.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 999;
+}
+.login_video{
+	position: relative;
+}
+.qp{
+	width: .64rem;
+	height: .64rem;
+	border: 10px solid transparent;
+	background: url(https://qiniustatic.if-chat.com/h5/staticv2/qb.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: .31rem;
+	z-index: 99999;
+	bottom: .2rem;
+}
+#canvas{
+	top: 0;
+	background: #000;
+	position: absolute;
+	z-index: 88;
+}
+.login_video video{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.poster{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	font-size: 0;
+	z-index: 99;
+}
+.poster img{
+	width: 100%;
+	height: 103%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	font-size: 0;
+	display: block;
+}
+.poster,.login_video{
+	width: 100%;
+	height: 100%;
+}
+.center_streamerMin{
+	width: 95%;
+	margin: auto;
+	height: 1.2rem;
+	background: url(https://qiniustatic.if-chat.com/h5/staticv2/streamer1.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 0 .35rem;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -moz-box;
+	display: box;
+	-moz-box-pack: justify;
+	-webkit-box-pack: justify;
+	box-pack: justify;
+	-moz-box-align: center;
+	-webkit-box-align: center;
+	box-align: center;
+	-moz-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-moz-align-items: center;
+	align-items: center;
+	-webkit-align-items: center;
+}
+.center_streamerMin div{
+	font-size: .25rem;
+	position: relative;
+	line-height: .4rem;
+	color: #4D4D4D;
+}
+.center_streamerMin div img{
+	width: .52rem;
+	height: .52rem;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.user{
+	padding-left: .65rem;
+}
+.center_streamerMax{
+	width: 95%;
+	margin: .15rem auto;
+	height: 1.75rem;
+	background: url(https://qiniustatic.if-chat.com/h5/staticv2/streamer2.png) no-repeat;
+	background-size: 100% 100%;
+	padding: .3rem .35rem 0;
+}
+.center_streamerMax div{
+	font-size: .25rem;
+}
+.myEat{
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -moz-box;
+	display: box;
+	height: .3rem;
+	padding: 0 .15rem;
+	-moz-box-pack: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+	-moz-box-align: center;
+	-webkit-box-align: center;
+	box-align: center;
+	-moz-justify-content: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	-moz-align-items: center;
+	align-items: center;
+	-webkit-align-items: center;
+	background: #fff;
+	margin: auto;
+	white-space: nowrap;
+}
+.myEat :nth-child(1){
+	width: .56rem;
+	height: .12rem;
+	background: url(https://qiniustatic.if-chat.com/h5/staticv2/myEatL.png) no-repeat;
+	background-size: 100% 100%;
+}
+.myEat :nth-child(2){
+	margin: 0 .15rem;
+	color: #D19031;
+}
+.myEat :nth-child(3){
+	width: .56rem;
+	height: .12rem;
+	background: url(https://qiniustatic.if-chat.com/h5/staticv2/myEatR.png) no-repeat;
+	background-size: 100% 100%;
+}
+.eatUser{
+	width: 95%;
+	margin-top: .3rem;
+	position: relative;
+	padding-left: .65rem;
+	color: #4D4D4D;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -moz-box;
+	display: box;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.eatUser img{
+	width: .52rem;
+	height: .52rem;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.eatWrites{
+	font-size: .23rem;
+	width: 95%;
+	padding-top: .15rem;
+	margin: auto;
+	text-align: center;
+	letter-spacing:.025rem;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -moz-box;
+	display: box;
+	-moz-box-pack: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+	-moz-justify-content: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	white-space: nowrap;
+}
+.eatTex{
+	font-size: .18rem;
+	width: 95%;
+	padding-top: .15rem;
+	margin: .14rem auto .34rem;
+	text-align: center;
+	letter-spacing:.025rem;
+	color: #4D4D4D;
+	white-space: nowrap;
+}
+#red{
+	color: #E13421;
+	font-weight: bold;
+}
+
+.fuceng {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	background-image: url(https://qiniustatic.if-chat.com/h5/staticv2/safari.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: none;
+	z-index:99999999;
+}
+
+.fuceng_android {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	background-image: url(https://qiniustatic.if-chat.com/h5/staticv2/browser.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: none;
+	z-index:99999999;
+}

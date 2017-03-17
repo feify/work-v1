@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>iF开启社交颜世代，无视频不聊天</title>
+		<link rel="stylesheet" href="https://qiniustatic.if-chat.com/offmusicv2/css/main.css" />
+		<script src="https://qiniustatic.if-chat.com/offmusicv2/js/v.js"></script>
+		<script src="https://qiniustatic.if-chat.com/offmusicv2/js/jquery-2.1.4.js"></script>
+		<script src="https://qiniustatic.if-chat.com/offmusicv2/js/weixin.js"></script>
+		<script src="https://qiniustatic.if-chat.com/offmusicv2/js/main.js"></script>
+	</head>
+<body>
+<div id="container">
+	<div id="wrap">
+		<div id="main">
+			<div id="fc" class="fuceng"></div>
+			<div id="mod_player5">
+				<video poster="https://wswy.if-chat.com/hulumusic.mp4?vframe/jpg/offset/0/w/285/h/500" autoplay controls="controls" webkit-playsinline playsinline qb-video-float-mode="false" preload="preload" id="video" width="640" height="450">
+					<source src="http://106.38.238.54/xdispatch/7xlp2o.com1.z0.glb.clouddn.com/hulumusicv7.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="bg"></div>
+			<div class="txt">官方邀请码：<span>iF8888</span></div>
+			<img src="https://qiniustatic.if-chat.com/offmusicv2/img/btn.png" class="btn"  />
+		</div>
+	</div>
+	</div>
+	<script>
+			//一般情况下，这样就可以自动播放了，但是一些奇葩iPhone机不可以
+		    document.getElementById('video').play(); 
+		   //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效 
+		   document.addEventListener("WeixinJSBridgeReady", function () {
+		       document.getElementById('video').play();
+		   }, false); 
+	</script>
+</body>
+</html>

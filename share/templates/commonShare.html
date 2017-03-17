@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--让IE以最新的内核渲染 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<!--让视口宽度为设备宽度,不允许用户缩放 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<!--不自动识别电话号码和邮编 -->
+	<meta name="format-detection" content="telephone=no,email=no"/>
+	<!--开启对webapp的支持 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--强制全屏显示 -->
+	<meta name="full-screen" content="yes">
+	<!--禁止浏览器从缓存中访问页面内容 -->
+	<meta http-equiv="Pragma" content="no-cache">
+	<!--web app 应用下状态(屏幕顶部条)的颜色,默认值为 default(白色) -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<title th:text="${shareData.title}">IF-无视频不聊天</title>
+	<link rel="stylesheet" href="/share/resources/commonShare.css">
+</head>
+<body>
+	<div id="fc" class="fuceng"></div>
+	<p th:hidden="true" th:text="${shareData.from}" id="from"></p>
+	<p th:hidden="true" th:text="${shareData.jm}" id="jm"></p>
+	<!-- 隐藏图 -->
+	<img th:src="${shareData.wxthumburl}" th:hidden="true">
+	<div class="container">
+		<header class="header">
+			<div class='user'><img th:src="${shareData.headurl+'?imageView2/1/w/200/h/200'}" alt=""><span th:text="${shareData.username}">iF</span></div>
+			<div>iF邀请码：<span id="red" th:text="${shareData.incode}">暂无</span></div>
+		</header>
+		<main class="main">
+			<section class="conter">
+				<div class="conter_videoBox">
+					<div class="login">
+						<p class="login_play"></p>
+					</div>
+					<!-- poster/缩略图 -->
+					<div class="poster"><img th:src="${shareData.thumburl}"></div>
+					<div class="login_video">
+						<video id="videos">
+							<source th:src="${shareData.videourl}"/>
+						</video>
+						<center><canvas id="canvas"></canvas></center>
+						<div class="qp"></div>
+					</div>
+					<a class="addMy"></a>
+				</div>
+			</section>
+		</main>
+		<a class="footer">
+			<h4><img src="https://qiniustatic.if-chat.com/h5/staticv2/logo.png" alt=""><div><span>iF</span><span>-&nbsp;开启社交颜世代</span></div></h4>
+			<p>立即下载</p>
+		</a>
+	</div>
+	<script src="/share/resources/zepto.min.js"></script>
+	<script src="/share/resources/download.js"></script>
+	<script src="/share/resources/commonShare.js"></script>
+</body>
+</html>

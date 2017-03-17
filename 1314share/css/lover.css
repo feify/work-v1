@@ -1,0 +1,192 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	list-style: none;
+	text-decoration: none;
+	-webkit-overflow-scrolling: touch;
+	font-family: "微软雅黑";
+	font-family: -apple-system-font,Helvetica Neue,sans-serif;
+}
+
+html,body,.container{
+	width: 100%;
+	max-width: 1024px !important;
+	margin: auto;
+	height: 100%;
+	overflow: hidden;
+}
+.main{
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+}
+.conter{
+	width: 100%;
+	height: 20.5rem;
+	background: url(https://qiniustatic.if-chat.com/lover/img/bg.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.conter_top{
+	width: 100%;
+	height: 3.67rem;
+	position: relative;
+}
+.conter_top p{
+	width: 1.3rem;
+	height: .53rem;
+	position: absolute;
+	top: 1.25rem;
+	right: .8rem;
+}
+.conterBox{
+	width: 100%;
+    height: 7.41rem;
+    margin: -.9rem auto 0;
+    position: relative;
+    overflow: hidden;
+}
+.conter_videoBox{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -moz-box;
+	display: box;
+	-moz-flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+	flex-shrink: 0;
+}
+.conter_videoBox canvas{
+	width: 100%;
+	height: 100%;
+}
+.icon{
+	width: 100%;
+	height: 1.9rem;
+	background: url(https://qiniustatic.if-chat.com/lover/img/rectangle.png) no-repeat;
+	background-size: 100% 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -moz-box;
+	display: box;
+	-moz-box-pack: justify;
+	-webkit-box-pack: justify;
+	box-pack: justify;
+	-moz-justify-content: space-around;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	box-align:center;
+	-moz-box-align:center;
+	-webkit-box-align:center;
+	align-items: center;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	position: absolute;
+	top: 9.3rem;
+	text-align: center;
+}
+.icon li{
+	width: 1.22rem;
+	display: inline-block;
+	height: 1.22rem;
+	border-radius: 50%;
+	border: 2px solid #000;
+	background-color: #fff;
+	position: relative;
+	top: -.5rem;
+}
+.inactive{
+	width: 1.22rem;
+	height: 1.22rem;
+	border-radius: 50%;
+	border: 2px solid #000;
+	background-color: #FEC3CC;
+	position: absolute;
+	top: -.1rem;
+	left: -.1rem;
+}
+.active{
+	width: 1.22rem;
+	height: 1.22rem;
+	border-radius: 50%;
+	border: 2px solid #FC164C;
+	background-color: #FEC3CC;
+	position: absolute;
+	top: -.1rem;
+	left: -.1rem;
+}
+.active:before{
+	content: "";
+	position: absolute;
+	top: -.18rem;
+	left: -.18rem;
+	width: 1.48rem;
+	height: 1.46rem;
+	background: url(https://qiniustatic.if-chat.com/lover/img/start.png) no-repeat;
+	background-size: 100% 100%;
+}
+.icon img{
+	width: 1.17rem;
+	height: .67rem;
+}
+.details{
+	width: 100%;
+	height: 7.3rem;
+	background: url(https://qiniustatic.if-chat.com/lover/img/rules.png) no-repeat;
+	background-size: 100% 100%;
+	padding-top: 1.6rem;
+	position: relative;
+	top: .45rem;
+}
+.details ul{
+	width: 5rem;
+	margin: auto;
+}
+.details ul li{
+	font-size: .25rem;
+	color: #3D4070;
+	line-height: .35rem;
+	margin-bottom: .1rem;
+}
+.downLoad{
+	width: 100%;
+	height: 2.7rem;
+	position: relative;
+}
+.downLoad p{
+	width: 4.5rem;
+	height: 1.4rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: .65rem;
+}
+.fuceng {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url(https://qiniustatic.if-chat.com/lover/img/safari.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: none;
+	z-index:9999999;
+}
+
+.fuceng_android {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url(https://qiniustatic.if-chat.com/lover/img/browser.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: none;
+	z-index:9999999;
+}

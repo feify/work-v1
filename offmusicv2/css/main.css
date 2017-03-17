@@ -1,0 +1,58 @@
+@charset "utf-8";
+html,body{margin:0px;width:100%;height:100%; padding: 0px; overflow:hidden; background: #fee94e;}
+a{text-decoration: none; margin: 0 auto;}
+a:hover{text-decoration: none;}
+html{
+    font-size: 100px;
+}
+#container{
+	width: 100%;
+    height: 100%;
+}
+#wrap{
+	width: 100%;
+    height: 100%;
+}
+#main{width:100%;height: 100%; display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    display: -moz-box;
+    display: box;
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    box-orient:justify;
+    -moz-box-orient:justify;
+    -webkit-box-orient:justify;
+    position: relative; }
+.bg{width: 100%; height: 100%;background: url(https://qiniustatic.if-chat.com/offmusicv2/img/bg.jpg) no-repeat;background-size:100% auto; }
+.btn{left: 50%; margin-left:-1.15rem; bottom: .75rem; width: 2.30rem;height: .55rem;position: absolute;}
+.txt{width:100%;bottom: .15rem; font-size: .28rem;text-align: center;font-weight: bold; color: #fff;position: absolute;}
+.txt span{color: #ffdf00;}
+#mod_player5{z-index: 9; width: 640px; height: 450px;
+background: #000;}
+ .fuceng {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    background-image: url(https://qiniustatic.if-chat.com/offmusicv2/img/safari.png);
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: none;
+    z-index:99999999;
+}
+
+.fuceng_android {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    background-image: url(https://qiniustatic.if-chat.com/offmusicv2/img/browser.png);
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: none;
+    z-index:99999999;
+}

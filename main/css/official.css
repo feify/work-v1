@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	-webkit-overflow-scrolling: touch;
+	font-family: "微软雅黑";
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,body,.container{
+	width: 100%;
+	margin: auto;
+	max-width: 1000px !important;
+	position: relative;
+	background: #fff;
+}
+.main{
+	width: 100%;
+	background: #fff;
+}
+.conter{
+	width: 100%;
+	background: #fff;
+}
+.conter_top{
+	width: 100%;
+	height: 6.04rem;
+	position: relative;
+	background: url(../images/top.png) no-repeat;
+	background-size: 100% 100%;
+}
+.topBox{
+	width: 44%;
+	position: absolute;
+	overflow: hidden;
+	height: auto;
+	left: 0; 
+	right: 0;
+	margin: 1.72rem auto;
+}
+.box_ul{
+	width: 100%;
+	height: auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+}
+.box_ul li{
+	width: 100%;
+	height: auto;
+}
+.box_ul li img{
+	width: 100%;
+	height: auto;
+}
+.conter_down{
+	width: 100%;
+	background: url(../images/radian.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	z-index: 999;
+	top: -.81rem;
+	padding-bottom:.2rem;
+}
+.conter_down p{
+	width: 100%;
+	text-align: center;
+	color: #949494;
+	font-size: .22rem;
+}
+.logo{
+	width: 3.38rem;
+	height: 2.63rem;
+	position: relative;
+	top: -.32rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+.btn{
+	width: 4.03rem;
+	height: .89rem;
+	margin: .2rem auto;
+	background: url(../images/button.png) no-repeat;
+	background-size: 100% 100%;
+	display: block;
+}
+.footer{
+	width: 100%;
+	height: .6rem;
+	background: #fff;
+	line-height: .5rem;
+	color: #959595;
+	text-align: center;
+	font-size: .2rem;
+	position: relative;
+	bottom: 0;
+}
+ .fuceng {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    background-image: url(../images/safari.png);
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: none;
+    z-index:99999999;
+}
+
+.fuceng_android {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    background-image: url(../images/browser.png);
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: none;
+    z-index:99999999;
+}
+.share{
+	width: 90%;
+	margin: auto;
+	position: relative;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+.share div{
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -moz-box;
+	display: box;
+	-moz-box-pack: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+	-moz-justify-content: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	padding-left: .18rem;
+}

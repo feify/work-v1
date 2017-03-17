@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	text-decoration: none;
+	-webkit-overflow-scrolling: touch;
+	font-family: 'PingFang medium';
+	font-family: "微软雅黑";
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,body,.container{
+	width: 100%;
+	height: 100%;
+	max-width: 610px !important;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+}
+.container{
+	background: url(../images/bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.logo{
+	width: 1.34rem;
+	height: 1.34rem;
+	background: url(../images/logo.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 0;
+	top: .1rem;
+}
+.rules{
+	width: 2.6rem;
+	height: 1.77rem;
+	background: url(../images/rules.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	bottom: .33rem;
+	left: .31rem;
+}
+.downLoad{
+	width: 2.56rem;
+	height: 1.76rem;
+	background: url(../images/downLoad.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	bottom: .33rem;
+	right: .31rem;
+}
+.fuceng {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/safari.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: none;
+	z-index:9999999;
+}
+
+.fuceng_android {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/browser.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: none;
+	z-index:9999999;
+}
